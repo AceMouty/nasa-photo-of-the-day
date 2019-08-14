@@ -32,12 +32,12 @@ function App() {
 
 	// Creating state will returned data from endpoint without the use of an axios call
 	// const [card] = useState(data)
-	
+
 	if (!card) {return <h3>Loading...</h3>}
   return (
 
     <div className="App">
-     <ImageCard image={card.url} desc={card.explanation} date={card.date}/>
+     <ImageCard image={card.url} title={card.title} desc={card.explanation} date={card.date}/>
     </div>
   );
 }
