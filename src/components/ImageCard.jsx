@@ -1,12 +1,18 @@
 import React from 'react';
+import {ImageContainer, Image, TextContainer, Header, Description, Date} from './styles';
 
 function ImageCard (props) {
 	return (
 		<>
-			<img src={props.image} alt=""/>
-			<h2>{props.title}</h2>
-			<p>{props.desc}</p>
-			<p>{props.date}</p>
+			<ImageContainer>
+				<Image src={props.image}/>
+			</ImageContainer>	
+			<TextContainer>
+				<Header>{props.title}</Header>
+				<Description>{props.desc}</Description>
+				<	Date>{props.date}</Date>
+			</TextContainer>
+			
 		</>
 	)
 }
