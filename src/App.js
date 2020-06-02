@@ -1,13 +1,14 @@
 import React from "react";
-import "./App.css";
+import Navbar from './components/Navbar'
+import Card from './components/Card'
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <header className="bg-blue-600 flex justify-center items-center flex-col md:justify-between md:items-center md:flex-row py-3 px-6">
+        <Navbar/>
+      </header>
+      <Card/>      
     </div>
   );
 }
