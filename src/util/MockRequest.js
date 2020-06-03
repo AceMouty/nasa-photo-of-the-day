@@ -18,7 +18,7 @@ function MockRequest (success, timeOut=10000){
       } else {
         reject({ message: "Unable to get the data" })
       }
-    })
+    }, timeOut)
   })
 }
 
