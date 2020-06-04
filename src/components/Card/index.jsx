@@ -51,8 +51,8 @@ function Card(){
 
   return(
     
-    <div className="bg-white mx-auto p-5 rounded-md lg:w-6/12 sm:w-8/12 w-10/12 bg-purple-400">
-      <div className="relative w-64 h-64 mx-auto mb-5">
+    <div className="bg-white mx-auto my-5 p-5 rounded-md sm:w-8/12 md:w-8/12 lg:w-8/12 w-10/12 bg-purple-300">
+      <div className="relative w-40 h-40 md:w-64 md:h-64 mx-auto mb-5 ">
         <img src={cardData.url} alt="Image from Nasa" className="absolute top-0 h-full w-full rounded-md"/>
       </div>
       <div className="">
